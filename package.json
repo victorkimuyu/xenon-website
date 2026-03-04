@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  },
+  "name": "xenon-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "@tailwindcss -i ./src/input.css -o ./static/css/global.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorkimuyu/xenon-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/victorkimuyu/xenon-website/issues"
+  },
+  "homepage": "https://github.com/victorkimuyu/xenon-website#readme"
+}
