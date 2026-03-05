@@ -25,9 +25,26 @@
 }
 
 @theme {
-    --color-steel-blue-400: #5a9bd3;
-    --color-steel-blue-500: #4682B4;
-    --color-steel-blue-600: #3a6d96;
-    --color-steel-blue-700: #2e5a7d;
+    --color-xenon-blue-500: #5567b5;
+    /* Slightly lighter for hover states if needed */
+    --color-xenon-blue-600: #293d8f;
+    /* Primary Logo Dark Blue */
+    --color-xenon-blue-700: #1f2d6b;
+    /* Darker for active states */
+
+    --color-xenon-green-500: #42a958;
+    /* Slightly lighter */
+    --color-xenon-green-600: #309245;
+    /* Primary Logo Green */
+    --color-xenon-green-700: #226b32;
+    /* Darker for active states */
+
+    --color-xenon-light-green-500: #b5db5c;
+    /* Slightly lighter */
+    --color-xenon-light-green-600: #a0cc3a;
+    /* Primary Logo Light Green */
+    --color-xenon-light-green-700: #7d9e2e;
+    /* Darker for active states */
+
     --font-sans: 'LabGrotesque', ui-sans-serif, system-ui, sans-serif;
 }
