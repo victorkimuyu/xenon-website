@@ -4,117 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Xenon Auto Assessors & Valuers</title>
-    <script src="./static/css/global.css"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .cta-button {
-            background-color: #4682B4; /* Steel Blue */
-            color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-transform: uppercase;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #5a9bd3; /* Lighter Steel Blue */
-        }
-    </style>
+    <link rel="stylesheet" href="static/css/global.css">
+<base href="/xenon-website/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
 <body class="bg-white text-gray-800">
 
-    <!-- Navigation Bar -->
-    <nav class="bg-white shadow-md p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <div>
-                <a href="index.html"><img src="/static/images/xenon_logo.png" alt="Xenon Logo" class="h-12"></a>
-            </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="index.html" class="text-gray-600 hover:text-steel-blue-500">Home</a>
-                <a href="solutions.html" class="text-gray-600 hover:text-steel-blue-500">Services</a>
-                <a href="our_clients.html" class="text-gray-600 hover:text-steel-blue-500">Our Clients</a>
-                <a href="about_us.html" class="text-gray-600 hover:text-steel-blue-500">About Us</a>
-            </div>
-            <div>
-                <a href="/" class="cta-button">Contact Us</a>
-            </div>
+<!-- Navigation -->
+<nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+        <a href="index.html">
+            <img src="static/images/xenon_logo.svg" alt="Xenon Logo" class="h-10">
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="index.html" class="text-gray-600 hover:text-steel-blue-500 transition">Home</a>
+            <a href="solutions.html" class="text-gray-600 hover:text-steel-blue-500 transition">Services</a>
+            <a href="our_clients.html" class="text-gray-600 hover:text-steel-blue-500 transition">Our Clients</a>
+            <a href="about_us.html" class="text-gray-600 hover:text-steel-blue-500 transition">About Us</a>
         </div>
-    </nav>
+        <a href="contact_us.html" class="hidden md:inline-block bg-steel-blue-500 hover:bg-steel-blue-600 text-white font-bold py-2.5 px-6 rounded-lg uppercase text-sm tracking-wide transition">Contact Us</a>
+        <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3">
+        <a href="index.html" class="block text-gray-600">Home</a>
+        <a href="solutions.html" class="block text-gray-600">Services</a>
+        <a href="our_clients.html" class="block text-gray-600">Our Clients</a>
+        <a href="about_us.html" class="block text-gray-600">About Us</a>
+        <a href="contact_us.html" class="block bg-steel-blue-500 text-white text-center font-bold py-2.5 rounded-lg uppercase text-sm">Contact Us</a>
+    </div>
+</nav>
 
-    <!-- Contact Section -->
-    <section class="py-20">
-        <div class="container mx-auto">
-            <h1 class="text-4xl font-bold text-center mb-12">Contact Us</h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <h2 class="text-2xl font-bold mb-4">Get in Touch</h2>
-                    <form action="contact_us.html" method="post" enctype="multipart/form-data">
-                        {% csrf_token %}
-                        {% for field in form %}
-                            <div class="mb-4">
-                                <label for="{{ field.id_for_label }}" class="block text-gray-700 font-bold mb-2">{{ field.label }}</label>
-                                {{ field }}
-                            </div>
-                        {% endfor %}
-                        <div class="mb-4">
-                            <label for="id_image" class="block text-gray-700 font-bold mb-2">Upload Images (Optional)</label>
-                            {{ image_form.image }}
+<!-- Page Header -->
+<header class="bg-gradient-to-r from-steel-blue-600 to-steel-blue-500 text-white py-16 md:py-20">
+    <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Contact Us</h1>
+        <p class="text-lg text-white/80 max-w-2xl mx-auto">Have a question or need an assessment? We'd love to hear from you.</p>
+    </div>
+</header>
+
+<!-- Contact Section -->
+<section class="py-20 md:py-28">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+            <!-- Contact Form -->
+            <div class="bg-white border border-gray-100 rounded-xl shadow-sm p-8 md:p-10">
+                <h2 class="text-2xl font-bold mb-6">Get in Touch</h2>
+                <form action="thanks.html" method="get">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+                        <div>
+                            <label for="first_name" class="block text-sm font-semibold text-gray-700 mb-1.5">First Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="first_name" name="first_name" required placeholder="John" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-steel-blue-500 focus:border-transparent transition">
                         </div>
-                        <button type="submit" class="cta-button">Send Message</button>
-                    </form>
-                </div>
-                <div>
-                    <h2 class="text-2xl font-bold mb-4">Our Offices</h2>
-                    <div class="mb-8">
-                        <h3 class="text-xl font-bold">Head Office (Nairobi)</h3>
-                        <p>KCB Building, Enterprise Rd. 6th Floor, Suite 4, Industrial Area, Nairobi</p>
-                        <p>Phone: 0710 420234, 0725 777195</p>
+                        <div>
+                            <label for="last_name" class="block text-sm font-semibold text-gray-700 mb-1.5">Last Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="last_name" name="last_name" required placeholder="Doe" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-steel-blue-500 focus:border-transparent transition">
+                        </div>
                     </div>
-                    <div class="mb-8">
-                        <h3 class="text-xl font-bold">Mombasa Branch</h3>
-                        <p>Pan Africa Hs, 1st Floor; Along Moi Avenue; P.O. Box 365(80100),Msa.</p>
-                        <p>Phone: 0725 777195, 0700 799054</p>
+                    <div class="mb-5">
+                        <label for="email" class="block text-sm font-semibold text-gray-700 mb-1.5">Email Address <span class="text-red-500">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-steel-blue-500 focus:border-transparent transition">
                     </div>
-                    <div class="mb-8">
-                        <h3 class="text-xl font-bold">Eldoret Branch</h3>
-                        <p>Zion mall, Block B - Suite 041, Uganda-Nairobi Road.</p>
-                        <p>Phone: 0704 226817, 0725 777195</p>
+                    <div class="mb-5">
+                        <label for="phone" class="block text-sm font-semibold text-gray-700 mb-1.5">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="0712 345678" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-steel-blue-500 focus:border-transparent transition">
                     </div>
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.791123952558!2d36.841149!3d-1.300497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1176791b337f%3A0x8386442584596e4!2sKCB%20Building%2C%20Enterprise%20Rd%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1678886455628!5m2!1sen!2ske" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="mb-5">
+                        <label for="service" class="block text-sm font-semibold text-gray-700 mb-1.5">Service Required</label>
+                        <select id="service" name="service" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-steel-blue-500 focus:border-transparent transition bg-white">
+                            <option value="">Select a service…</option>
+                            <option value="accident-assessment">Accident Assessment</option>
+                            <option value="pre-insurance-valuation">Pre-Insurance Valuation</option>
+                            <option value="finance-collateral-valuation">Finance Collateral Valuation</option>
+                            <option value="court-bond-valuation">Court Bond Valuation</option>
+                            <option value="post-repairs-reinspection">Post-Repairs Re-Inspection</option>
+                            <option value="other">Other</option>
+                        </select>
                     </div>
-                </div>
+                    <div class="mb-5">
+                        <label for="message" class="block text-sm font-semibold text-gray-700 mb-1.5">Message <span class="text-red-500">*</span></label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help…" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-steel-blue-500 focus:border-transparent transition resize-vertical"></textarea>
+                    </div>
+                    <div class="mb-6">
+                        <label for="attachment" class="block text-sm font-semibold text-gray-700 mb-1.5">Upload Images (Optional)</label>
+                        <input type="file" id="attachment" name="attachment" accept="image/*" multiple class="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-steel-blue-500/10 file:text-steel-blue-600 hover:file:bg-steel-blue-500/20 transition">
+                    </div>
+                    <button type="submit" class="w-full bg-steel-blue-500 hover:bg-steel-blue-600 text-white font-bold py-3 px-6 rounded-lg uppercase text-sm tracking-wide transition">Send Message</button>
+                </form>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 mt-20">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <!-- Office Locations -->
             <div>
-                <img src="/static/images/xenon_logo.png" alt="Xenon Logo" class="h-12 mx-auto mb-4">
-                <p>&copy; 2025 Xenon Auto Assessors & Valuers. All Rights Reserved.</p>
-            </div>
-            <div>
-                <h3 class="font-bold mb-4">Quick Links</h3>
-                <ul>
-                    <li><a href="/services.html" class="hover:text-steel-blue-400">Services</a></li>
-                    <li><a href="/about_us.html" class="hover:text-steel-blue-400">About Us</a></li>
-                    <li><a href="/contact_us.html" class="hover:text-steel-blue-400">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="font-bold mb-4">Head Office</h3>
-                <p>KCB Building, Enterprise Rd. 6th Floor, Suite 4, Industrial Area, Nairobi</p>
-                <p>Phone: 0710 420234, 0725 777195</p>
-            </div>
-        </div>
-    </footer>
+                <h2 class="text-2xl font-bold mb-6">Our Offices</h2>
+                <div class="space-y-8 mb-10">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-steel-blue-500/10 text-steel-blue-500 rounded-lg flex-shrink-0 flex items-center justify-center mt-0.5">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Head Office — Nairobi</h3>
+                            <p class="text-gray-600 text-sm mt-1">KCB Building, Enterprise Rd. 6th Floor, Suite 4, Industrial Area, Nairobi</p>
+                            <p class="text-gray-600 text-sm">Phone: 0710 420234, 0725 777195</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-steel-blue-500/10 text-steel-blue-500 rounded-lg flex-shrink-0 flex items-center justify-center mt-0.5">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Mombasa Branch</h3>
+                            <p class="text-gray-600 text-sm mt-1">Pan Africa Hs, 1st Floor; Along Moi Avenue; P.O. Box 365(80100), Msa.</p>
+                            <p class="text-gray-600 text-sm">Phone: 0725 777195, 0700 799054</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-steel-blue-500/10 text-steel-blue-500 rounded-lg flex-shrink-0 flex items-center justify-center mt-0.5">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Eldoret Branch</h3>
+                            <p class="text-gray-600 text-sm mt-1">Zion Mall, Block B — Suite 041, Uganda-Nairobi Road.</p>
+                            <p class="text-gray-600 text-sm">Phone: 0704 226817, 0725 777195</p>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Map -->
+                <div class="rounded-xl overflow-hidden shadow-sm border border-gray-100">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.791123952558!2d36.841149!3d-1.300497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1176791b337f%3A0x8386442584596e4!2sKCB%20Building%2C%20Enterprise%20Rd%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1678886455628!5m2!1sen!2ske" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+            <img src="static/images/xenon_logo_reversed.svg" alt="Xenon Logo" class="h-10 mb-4">
+            <p class="text-sm text-gray-400">&copy; 2026 Xenon Auto Assessors &amp; Valuers. All Rights Reserved.</p>
+        </div>
+        <div>
+            <h3 class="font-bold text-white mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="solutions.html" class="hover:text-white transition">Services</a></li>
+                <li><a href="about_us.html" class="hover:text-white transition">About Us</a></li>
+                <li><a href="contact_us.html" class="hover:text-white transition">Contact</a></li>
+                <li><a href="our_clients.html" class="hover:text-white transition">Our Clients</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-bold text-white mb-4">Head Office</h3>
+            <p class="text-sm leading-relaxed">KCB Building, Enterprise Rd.<br>6th Floor, Suite 4, Industrial Area, Nairobi</p>
+            <p class="text-sm mt-2">Phone: 0710 420234, 0725 777195</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+</script>
 </body>
 </html>

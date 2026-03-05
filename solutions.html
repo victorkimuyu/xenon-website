@@ -2,101 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"git  content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - Xenon Auto Assessors & Valuers</title>
-    <script src="./static/css/global.css"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .cta-button {
-            background-color: #4682B4; /* Steel Blue */
-            color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-transform: uppercase;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #5a9bd3; /* Lighter Steel Blue */
-        }
-    </style>
+    <link rel="stylesheet" href="static/css/global.css">
+<base href="/xenon-website/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
 <body class="bg-white text-gray-800">
 
-    <!-- Navigation Bar -->
-    <nav class="bg-white shadow-md p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <div>
-                <a href="/"><img src="/static/images/xenon_logo.png" alt="Xenon Logo" class="h-12"></a>
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <div class="container mx-auto flex justify-between items-center px-6 py-4">
+            <a href="index.html">
+                <img src="static/images/xenon_logo.svg" alt="Xenon Logo" class="h-10">
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-steel-blue-500 transition">Home</a>
+                <a href="solutions.html" class="text-steel-blue-600 font-semibold">Services</a>
+                <a href="our_clients.html" class="text-gray-600 hover:text-steel-blue-500 transition">Our Clients</a>
+                <a href="about_us.html" class="text-gray-600 hover:text-steel-blue-500 transition">About Us</a>
             </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="index.html" class="text-gray-600 hover:text-steel-blue-500">Home</a>
-                <a href="/" class="text-gray-600 hover:text-steel-blue-500">Services</a>
-                <a href="our_clients.html" class="text-gray-600 hover:text-steel-blue-500">Our Clients</a>
-                <a href="about_us.html" class="text-gray-600 hover:text-steel-blue-500">About Us</a>
-            </div>
-            <div>
-                <a href="contact_us.html" class="cta-button">Contact Us</a>
-            </div>
+            <a href="contact_us.html" class="hidden md:inline-block bg-steel-blue-500 hover:bg-steel-blue-600 text-white font-bold py-2.5 px-6 rounded-lg uppercase text-sm tracking-wide transition">Contact Us</a>
+            <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3">
+            <a href="index.html" class="block text-gray-600">Home</a>
+            <a href="solutions.html" class="block text-steel-blue-600 font-semibold">Services</a>
+            <a href="our_clients.html" class="block text-gray-600">Our Clients</a>
+            <a href="about_us.html" class="block text-gray-600">About Us</a>
+            <a href="contact_us.html" class="block bg-steel-blue-500 text-white text-center font-bold py-2.5 rounded-lg uppercase text-sm">Contact Us</a>
         </div>
     </nav>
 
+    <!-- Page Header -->
+    <header class="bg-gradient-to-r from-steel-blue-600 to-steel-blue-500 text-white py-16 md:py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Our Services</h1>
+            <p class="text-lg text-white/80 max-w-2xl mx-auto">Comprehensive motor vehicle assessment, valuation and inspection solutions tailored for insurers, institutions, and vehicle owners.</p>
+        </div>
+    </header>
+
     <!-- Services Section -->
-    <section class="py-20">
-        <div class="container mx-auto">
-            <h1 class="text-4xl font-bold text-center mb-12">Our Services</h1>
+    <section class="py-20 md:py-28">
+        <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="p-8 bg-gray-50 rounded-lg">
+                <div class="p-8 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-10 h-1 bg-steel-blue-500 rounded-full mb-5"></div>
                     <h2 class="text-2xl font-bold mb-4">Accident Assessment</h2>
-                    <p>We carry out a thorough inspection of a vehicle damaged in an accident, with an aim to establish the nature of impact and extend of damage to vehicle components, occasioned by the accident. Upon inspection of the unit, we compile a comprehensive accident assessment report detailing the extent of damage, making sure to include captioned and annotated exhibit photos, and an authoritative procedure to the repairer on restoring the unit to its pre-accident condition.</p>
+                    <p class="text-gray-600 leading-relaxed">We carry out a thorough inspection of a vehicle damaged in an accident, with an aim to establish the nature of impact and extent of damage to vehicle components, occasioned by the accident. Upon inspection of the unit, we compile a comprehensive accident assessment report detailing the extent of damage, making sure to include captioned and annotated exhibit photos, and an authoritative procedure to the repairer on restoring the unit to its pre-accident condition.</p>
                 </div>
-                <div class="p-8 bg-gray-50 rounded-lg">
+                <div class="p-8 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-10 h-1 bg-steel-blue-500 rounded-full mb-5"></div>
                     <h2 class="text-2xl font-bold mb-4">Pre-Insurance Valuation</h2>
-                    <p>We carry out vehicle appraisal and valuations for units intended for insurance cover against risks. As independent consultants, our role is to determine the market value of the unit, to aid the insurer in computing the appropriate premium payable by the insured for the vehicle. In the course of our valuation work, we take into account the condition of the vehicle, its odometer reading (mileage), market trends among other contributing factors to come up with an assessed market value that is reasonable and suitable for the purpose of insurance.</p>
+                    <p class="text-gray-600 leading-relaxed">We carry out vehicle appraisal and valuations for units intended for insurance cover against risks. As independent consultants, our role is to determine the market value of the unit, to aid the insurer in computing the appropriate premium payable by the insured for the vehicle. In the course of our valuation work, we take into account the condition of the vehicle, its odometer reading (mileage), market trends among other contributing factors to come up with an assessed market value that is reasonable and suitable for the purpose of insurance.</p>
                 </div>
-                <div class="p-8 bg-gray-50 rounded-lg">
+                <div class="p-8 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-10 h-1 bg-steel-blue-500 rounded-full mb-5"></div>
                     <h2 class="text-2xl font-bold mb-4">Finance Collateral Valuation</h2>
-                    <p>Offered to banks, micro-finance companies, SACCOs and similar institutions, our finance valuation services are geared towards establishing the value of a vehicle that is meant to be used as security for a loan or credit facility. It is imperative that our reports are firmly grounded on sound evaluation of the condition of the vehicle and prevailing market conditions to mitigate risk for the lender and the borrower alike.</p>
+                    <p class="text-gray-600 leading-relaxed">Offered to banks, micro-finance companies, SACCOs and similar institutions, our finance valuation services are geared towards establishing the value of a vehicle that is meant to be used as security for a loan or credit facility. It is imperative that our reports are firmly grounded on sound evaluation of the condition of the vehicle and prevailing market conditions to mitigate risk for the lender and the borrower alike.</p>
                 </div>
-                <div class="p-8 bg-gray-50 rounded-lg">
+                <div class="p-8 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-10 h-1 bg-steel-blue-500 rounded-full mb-5"></div>
                     <h2 class="text-2xl font-bold mb-4">Court Bond Valuation</h2>
-                    <p>For clients involved in legal proceedings that necessitate the posting of a security bond, we offer vehicle valuation services for the express purpose of being posted as a court bond. In cases where a motor vehicle is offered as security for a court bond, a formal valuation becomes essential. We assess the vehicle’s current market value to satisfy the court that it holds adequate worth to cover the bond amount.</p>
+                    <p class="text-gray-600 leading-relaxed">For clients involved in legal proceedings that necessitate the posting of a security bond, we offer vehicle valuation services for the express purpose of being posted as a court bond. In cases where a motor vehicle is offered as security for a court bond, a formal valuation becomes essential. We assess the vehicle's current market value to satisfy the court that it holds adequate worth to cover the bond amount.</p>
                 </div>
-                <div class="p-8 bg-gray-50 rounded-lg">
+                <div class="p-8 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition md:col-span-2 max-w-2xl mx-auto w-full">
+                    <div class="w-10 h-1 bg-steel-blue-500 rounded-full mb-5"></div>
                     <h2 class="text-2xl font-bold mb-4">Post-Repairs Re-Inspection</h2>
-                    <p>Following accident-related damage and subsequent repairs, a Post-Repairs Re-inspection report serves as a crucial verification step. This specialized inspection is designed to confirm that the restoration work performed on the vehicle faithfully reflects the recommendations of the assessment report. It acts as an essential quality control measure, ensuring that the repairs planned and agreed upon have been executed correctly and completely.</p>
+                    <p class="text-gray-600 leading-relaxed">Following accident-related damage and subsequent repairs, a Post-Repairs Re-inspection report serves as a crucial verification step. This specialized inspection is designed to confirm that the restoration work performed on the vehicle faithfully reflects the recommendations of the assessment report. It acts as an essential quality control measure, ensuring that the repairs planned and agreed upon have been executed correctly and completely.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- CTA -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-extrabold mb-4">Need a Professional Assessment?</h2>
+            <p class="text-gray-600 mb-8 max-w-xl mx-auto">Reach out to our team of qualified assessors for fast, accurate and reliable reports.</p>
+            <a href="contact_us.html" class="inline-block bg-steel-blue-500 hover:bg-steel-blue-600 text-white font-bold py-3 px-8 rounded-lg uppercase text-sm tracking-wide transition">Contact Us Today</a>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 mt-20">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
             <div>
-                <img src="/static/images/xenon_logo.png" alt="Xenon Logo" class="h-12 mx-auto mb-4">
-                <p>&copy; 2025 Xenon Auto Assessors & Valuers. All Rights Reserved.</p>
+                <img src="static/images/xenon_logo.svg" alt="Xenon Logo" class="h-10 mb-4">
+                <p class="text-sm text-gray-400">&copy; 2026 Xenon Auto Assessors &amp; Valuers. All Rights Reserved.</p>
             </div>
             <div>
-                <h3 class="font-bold mb-4">Quick Links</h3>
-                <ul>
-                    <li><a href="/services.html" class="hover:text-steel-blue-400">Services</a></li>
-                    <li><a href="/about_us.html" class="hover:text-steel-blue-400">About Us</a></li>
-                    <li><a href="/contact_us.html" class="hover:text-steel-blue-400">Contact</a></li>
+                <h3 class="font-bold text-white mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="solutions.html" class="hover:text-white transition">Services</a></li>
+                    <li><a href="about_us.html" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="contact_us.html" class="hover:text-white transition">Contact</a></li>
+                    <li><a href="our_clients.html" class="hover:text-white transition">Our Clients</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="font-bold mb-4">Head Office</h3>
-                <p>KCB Building, Enterprise Rd. 6th Floor, Suite 4, Industrial Area, Nairobi</p>
-                <p>Phone: 0710 420234, 0725 777195</p>
+                <h3 class="font-bold text-white mb-4">Head Office</h3>
+                <p class="text-sm leading-relaxed">KCB Building, Enterprise Rd.<br>6th Floor, Suite 4, Industrial Area, Nairobi</p>
+                <p class="text-sm mt-2">Phone: 0710 420234, 0725 777195</p>
             </div>
         </div>
     </footer>
 
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
