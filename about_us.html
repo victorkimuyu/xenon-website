@@ -4,47 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Xenon Auto Assessors & Valuers</title>
-<base href="/xenon-website/">
-    <link rel="stylesheet" href="static/css/global.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
-</head>
-<body class="bg-white text-gray-800">
+<link rel="stylesheet" href="static/css/global.css">
+    </head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-steel-blue-500/30">
 
 <!-- Navigation -->
-<nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+<nav class="bg-white/80 backdrop-blur-xl sticky top-0 z-50 border-b border-slate-200/60 shadow-sm transition-all duration-300">
     <div class="container mx-auto flex justify-between items-center px-6 py-4">
-        <a href="index.html">
+        <a href="index.html" class="hover:opacity-90 transition-opacity">
             <img src="static/images/xenon_logo.svg" alt="Xenon Logo" class="h-10">
         </a>
         <div class="hidden md:flex items-center space-x-8">
-            <a href="index.html" class="text-gray-600 hover:text-steel-blue-500 transition">Home</a>
-            <a href="solutions.html" class="text-gray-600 hover:text-steel-blue-500 transition">Services</a>
-            <a href="our_clients.html" class="text-gray-600 hover:text-steel-blue-500 transition">Our Clients</a>
-            <a href="about_us.html" class="text-steel-blue-600 font-semibold">About Us</a>
+            <a href="index.html" class="text-slate-600 hover:text-steel-blue-500 font-semibold uppercase tracking-wider text-sm transition-colors duration-300">Home</a>
+            <a href="about_us.html" class="text-steel-blue-600 font-bold uppercase tracking-wider text-sm">About Us</a>
+            <a href="solutions.html" class="text-slate-600 hover:text-steel-blue-500 font-semibold uppercase tracking-wider text-sm transition-colors duration-300">Services</a>
+            <a href="our_clients.html" class="text-slate-600 hover:text-steel-blue-500 font-semibold uppercase tracking-wider text-sm transition-colors duration-300">Our Clients</a>
         </div>
-        <a href="contact_us.html" class="hidden md:inline-block bg-steel-blue-500 hover:bg-steel-blue-600 text-white font-bold py-2.5 px-6 rounded-lg uppercase text-sm tracking-wide transition">Contact Us</a>
-        <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+        <a href="contact_us.html" class="hidden md:inline-flex items-center justify-center bg-steel-blue-500 hover:bg-steel-blue-600 text-white font-bold py-2.5 px-6 rounded-lg uppercase text-sm tracking-wider shadow-lg shadow-steel-blue-500/30 hover:shadow-steel-blue-500/50 hover:-translate-y-0.5 transition-all duration-300">Contact Us</a>
+        <!-- Mobile menu button -->
+        <button id="menu-toggle" class="md:hidden text-slate-700 hover:text-steel-blue-500 focus:outline-none transition-colors">
             <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
     </div>
+    <!-- Mobile menu -->
     <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3">
-        <a href="index.html" class="block text-gray-600">Home</a>
-        <a href="solutions.html" class="block text-gray-600">Services</a>
-        <a href="our_clients.html" class="block text-gray-600">Our Clients</a>
-        <a href="about_us.html" class="block text-steel-blue-600 font-semibold">About Us</a>
-        <a href="contact_us.html" class="block bg-steel-blue-500 text-white text-center font-bold py-2.5 rounded-lg uppercase text-sm">Contact Us</a>
+        <a href="index.html" class="block text-slate-600 font-semibold uppercase tracking-wider text-sm">Home</a>
+        <a href="about_us.html" class="block text-steel-blue-600 font-bold uppercase tracking-wider text-sm">About Us</a>
+        <a href="solutions.html" class="block text-slate-600 font-semibold uppercase tracking-wider text-sm">Services</a>
+        <a href="our_clients.html" class="block text-slate-600 font-semibold uppercase tracking-wider text-sm">Our Clients</a>
+        <a href="contact_us.html" class="block bg-steel-blue-500 active:bg-steel-blue-600 text-white text-center font-bold py-3 rounded-lg uppercase text-sm tracking-wider shadow-md transition-colors">Contact Us</a>
     </div>
 </nav>
 
 <!-- Page Header -->
-<header class="bg-gradient-to-r from-steel-blue-600 to-steel-blue-500 text-white py-16 md:py-20">
+<header class="bg-gradient-to-br from-slate-900 via-slate-800 to-steel-blue-900 text-white py-24 relative overflow-hidden shadow-inner">
     <div class="container mx-auto px-6 text-center">
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">About Xenon</h1>
+        <h1 class="text-4xl md:text-5xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-white/80 tracking-tight mb-4 drop-shadow-sm">About Xenon</h1>
         <p class="text-lg text-white/80 max-w-2xl mx-auto">A leading motor risk consultancy firm delivering trusted assessment and valuation services across Kenya.</p>
     </div>
 </header>
@@ -53,38 +48,38 @@
 <section class="py-20 md:py-28">
     <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto">
-            <p class="text-lg text-gray-600 leading-relaxed mb-12">Xenon Auto Assessors &amp; Valuers is a leading motor risk consultancy firm, established to provide insurers, vehicle owners and organisations with accident damage assessment, valuations, mechanical inspections and appraisal services for motor vehicles. Licensed by the Insurance Regulatory Authority (IRA), our compliance and competence is fully vetted. Additionally, we are members of the Motor Assessors Association of Kenya (MAAK), the professional body that upholds best practices for industry practitioners.</p>
+            <p class="text-lg text-slate-600 leading-relaxed mb-12">Xenon Auto Assessors &amp; Valuers is a leading motor risk consultancy firm, established to provide insurers, vehicle owners and organisations with accident damage assessment, valuations, mechanical inspections and appraisal services for motor vehicles. Licensed by the Insurance Regulatory Authority (IRA), our compliance and competence is fully vetted. Additionally, we are members of the Motor Assessors Association of Kenya (MAAK), the professional body that upholds best practices for industry practitioners.</p>
 
             <!-- Core Values -->
-            <p class="text-steel-blue-500 font-semibold uppercase tracking-wider text-sm mb-2 text-center">Our Foundation</p>
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-center">Core Values</h2>
+            <p class="text-steel-blue-600 font-bold uppercase tracking-widest text-sm mb-3 block text-center">Our Foundation</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 text-center">Core Values</h2>
             <div class="w-16 h-1 bg-steel-blue-500 mx-auto mb-12 rounded-full"></div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-                <div class="p-8 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition">
+                <div class="p-8 bg-white border border-slate-200/60 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-slate-200/60 ring-1 ring-slate-900/5">
                     <h3 class="text-xl font-bold mb-3 text-steel-blue-600">Diligence</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">We undertake our responsibilities with utmost rigorousness. You can count on our reports to contain accurate facts and materially sound opinions.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">We undertake our responsibilities with utmost rigorousness. You can count on our reports to contain accurate facts and materially sound opinions.</p>
                 </div>
-                <div class="p-8 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition">
+                <div class="p-8 bg-white border border-slate-200/60 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-slate-200/60 ring-1 ring-slate-900/5">
                     <h3 class="text-xl font-bold mb-3 text-steel-blue-600">Integrity</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">In our internal code of conduct, truthfulness and honesty are not mere suggestions: they are critical pillars of our service framework and are zealously monitored and enforced.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">In our internal code of conduct, truthfulness and honesty are not mere suggestions: they are critical pillars of our service framework and are zealously monitored and enforced.</p>
                 </div>
-                <div class="p-8 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition">
+                <div class="p-8 bg-white border border-slate-200/60 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-slate-200/60 ring-1 ring-slate-900/5">
                     <h3 class="text-xl font-bold mb-3 text-steel-blue-600">Quality</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Excellence is our culture. We do not settle for good enough when exemplary is within reach. This attitude permeates all facets of our dealings with clients and other stakeholders.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">Excellence is our culture. We do not settle for good enough when exemplary is within reach. This attitude permeates all facets of our dealings with clients and other stakeholders.</p>
                 </div>
-                <div class="p-8 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition">
+                <div class="p-8 bg-white border border-slate-200/60 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-slate-200/60 ring-1 ring-slate-900/5">
                     <h3 class="text-xl font-bold mb-3 text-steel-blue-600">Professionalism</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">We conduct ourselves in a reputable manner by keeping our word, meeting and whenever possible exceeding expectations whilst obsessing with delighting our customers.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">We conduct ourselves in a reputable manner by keeping our word, meeting and whenever possible exceeding expectations whilst obsessing with delighting our customers.</p>
                 </div>
-                <div class="p-8 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition">
+                <div class="p-8 bg-white border border-slate-200/60 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-slate-200/60 ring-1 ring-slate-900/5">
                     <h3 class="text-xl font-bold mb-3 text-steel-blue-600">Flexibility</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Our clients come first. We have a company culture that readily allows for adjustments to fit our client's unique context of business and goals.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">Our clients come first. We have a company culture that readily allows for adjustments to fit our client's unique context of business and goals.</p>
                 </div>
             </div>
 
             <!-- Competitive Edge -->
-            <p class="text-steel-blue-500 font-semibold uppercase tracking-wider text-sm mb-2 text-center">What Sets Us Apart</p>
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-center">Our Competitive Edge</h2>
+            <p class="text-steel-blue-600 font-bold uppercase tracking-widest text-sm mb-3 block text-center">What Sets Us Apart</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 text-center">Our Competitive Edge</h2>
             <div class="w-16 h-1 bg-steel-blue-500 mx-auto mb-12 rounded-full"></div>
             <div class="space-y-10">
                 <div class="flex items-start gap-5">
@@ -93,7 +88,7 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-bold mb-2">Capacity</h3>
-                        <p class="text-gray-600 leading-relaxed">Our strategically positioned network of branches across key regions in Kenya — Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Meru, Nyeri, Machakos and Kitui — translates directly into tangible benefits for our clients. This widespread presence significantly minimizes mileage billing, ensuring cost-effective service delivery wherever the assignment may be.</p>
+                        <p class="text-slate-600 leading-relaxed">Our strategically positioned network of branches across key regions in Kenya — Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Meru, Nyeri, Machakos and Kitui — translates directly into tangible benefits for our clients. This widespread presence significantly minimizes mileage billing, ensuring cost-effective service delivery wherever the assignment may be.</p>
                     </div>
                 </div>
                 <div class="flex items-start gap-5">
@@ -102,7 +97,7 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-bold mb-2">Operational Excellence</h3>
-                        <p class="text-gray-600 leading-relaxed">Years of dedicated effort have gone into refining our internal processes and systems, resulting in streamlined workflows that maximize productivity and eliminate downtime. This commitment to continuous improvement ensures that we deliver our services fast and efficiently, without compromising accuracy or thoroughness.</p>
+                        <p class="text-slate-600 leading-relaxed">Years of dedicated effort have gone into refining our internal processes and systems, resulting in streamlined workflows that maximize productivity and eliminate downtime. This commitment to continuous improvement ensures that we deliver our services fast and efficiently, without compromising accuracy or thoroughness.</p>
                     </div>
                 </div>
                 <div class="flex items-start gap-5">
@@ -111,7 +106,7 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-bold mb-2">Technical Competence</h3>
-                        <p class="text-gray-600 leading-relaxed">Our team comprises highly qualified assessors and competent administrative and backroom staff, each possessing the necessary skills and knowledge to deliver exceptional service. With a proven track record of over 10 years in operation and a wealth of market knowledge accumulated through the completion of over 50,000 reports, Xenon brings industry-leading experience and insight to every engagement.</p>
+                        <p class="text-slate-600 leading-relaxed">Our team comprises highly qualified assessors and competent administrative and backroom staff, each possessing the necessary skills and knowledge to deliver exceptional service. With a proven track record of over 10 years in operation and a wealth of market knowledge accumulated through the completion of over 50,000 reports, Xenon brings industry-leading experience and insight to every engagement.</p>
                     </div>
                 </div>
                 <div class="flex items-start gap-5">
@@ -120,7 +115,7 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-bold mb-2">Customer-First</h3>
-                        <p class="text-gray-600 leading-relaxed">At Xenon, our attitudes and actions are calibrated and conditioned to prioritize customer satisfaction above all else. We understand that navigating vehicle assessments and insurance processes can be complex, and therefore, we approach every interaction with empathy, patience, and a genuine commitment to helping our clients.</p>
+                        <p class="text-slate-600 leading-relaxed">At Xenon, our attitudes and actions are calibrated and conditioned to prioritize customer satisfaction above all else. We understand that navigating vehicle assessments and insurance processes can be complex, and therefore, we approach every interaction with empathy, patience, and a genuine commitment to helping our clients.</p>
                     </div>
                 </div>
             </div>
@@ -129,20 +124,20 @@
 </section>
 
 <!-- CTA -->
-<section class="bg-gradient-to-r from-steel-blue-600 to-steel-blue-500 text-white py-16">
+<section class="bg-gradient-to-br from-steel-blue-600 via-steel-blue-500 to-sky-600 text-white py-24 relative overflow-hidden">
     <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-extrabold mb-4">Want to Work With Us?</h2>
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Want to Work With Us?</h2>
         <p class="text-white/80 mb-8 max-w-xl mx-auto">Get in touch with our team for a consultation or to learn more about our services.</p>
-        <a href="contact_us.html" class="inline-block bg-white text-steel-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg uppercase text-sm tracking-wide transition">Contact Us</a>
+        <a href="contact_us.html" class="inline-block bg-white text-steel-blue-600 hover:bg-slate-100 font-bold py-3 px-8 rounded-lg uppercase text-sm tracking-wide transition">Contact Us</a>
     </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-gray-900 text-gray-300 py-12">
+<footer class="bg-slate-900 text-slate-300 py-12">
     <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
             <img src="static/images/xenon_logo.svg" alt="Xenon Logo" class="h-10 mb-4">
-            <p class="text-sm text-gray-400">&copy; 2026 Xenon Auto Assessors &amp; Valuers. All Rights Reserved.</p>
+            <p class="text-sm text-slate-400">&copy; 2026 Xenon Auto Assessors &amp; Valuers. All Rights Reserved.</p>
         </div>
         <div>
             <h3 class="font-bold text-white mb-4">Quick Links</h3>

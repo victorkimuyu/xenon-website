@@ -1,185 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xenon Auto Assessors & Valuers</title>
-    <base href="/xenon-website/">
     <link rel="stylesheet" href="static/css/global.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
 </head>
-<body class="bg-white text-gray-800">
 
-<!-- Navigation -->
-<nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
-    <div class="container mx-auto flex justify-between items-center px-6 py-4">
-        <a href="index.html">
-            <img src="static/images/xenon_logo.svg" alt="Xenon Logo" class="h-10">
-        </a>
-        <div class="hidden md:flex items-center space-x-8">
-            <a href="index.html" class="text-steel-blue-600 font-semibold">Home</a>
-            <a href="solutions.html" class="text-gray-600 hover:text-steel-blue-500 transition">Services</a>
-            <a href="our_clients.html" class="text-gray-600 hover:text-steel-blue-500 transition">Our Clients</a>
-            <a href="about_us.html" class="text-gray-600 hover:text-steel-blue-500 transition">About Us</a>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-steel-blue-500/30">
+
+    <!-- Navigation -->
+    <nav
+        class="bg-white/80 backdrop-blur-xl sticky top-0 z-50 border-b border-slate-200/60 shadow-sm transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center px-6 py-4">
+            <a href="index.html" class="hover:opacity-90 transition-opacity">
+                <img src="static/images/xenon_logo.svg" alt="Xenon Logo" class="h-10">
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-steel-blue-600 font-bold uppercase tracking-wider text-sm">Home</a>
+                <a href="about_us.html"
+                    class="text-slate-600 hover:text-steel-blue-500 font-semibold uppercase tracking-wider text-sm transition-colors duration-300">About
+                    Us</a>
+                <a href="solutions.html"
+                    class="text-slate-600 hover:text-steel-blue-500 font-semibold uppercase tracking-wider text-sm transition-colors duration-300">Services</a>
+                <a href="our_clients.html"
+                    class="text-slate-600 hover:text-steel-blue-500 font-semibold uppercase tracking-wider text-sm transition-colors duration-300">Our
+                    Clients</a>
+            </div>
+            <a href="contact_us.html"
+                class="hidden md:inline-flex items-center justify-center bg-steel-blue-500 hover:bg-steel-blue-600 text-white font-bold py-2.5 px-6 rounded-lg uppercase text-sm tracking-wider shadow-lg shadow-steel-blue-500/30 hover:shadow-steel-blue-500/50 hover:-translate-y-0.5 transition-all duration-300">Contact
+                Us</a>
+            <!-- Mobile menu button -->
+            <button id="menu-toggle"
+                class="md:hidden text-slate-700 hover:text-steel-blue-500 focus:outline-none transition-colors">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
         </div>
-        <a href="contact_us.html" class="hidden md:inline-block bg-steel-blue-500 hover:bg-steel-blue-600 text-white font-bold py-2.5 px-6 rounded-lg uppercase text-sm tracking-wide transition">Contact Us</a>
-        <!-- Mobile menu button -->
-        <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
-            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-    </div>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3">
-        <a href="index.html" class="block text-steel-blue-600 font-semibold">Home</a>
-        <a href="solutions.html" class="block text-gray-600">Services</a>
-        <a href="our_clients.html" class="block text-gray-600">Our Clients</a>
-        <a href="about_us.html" class="block text-gray-600">About Us</a>
-        <a href="contact_us.html" class="block bg-steel-blue-500 text-white text-center font-bold py-2.5 rounded-lg uppercase text-sm">Contact Us</a>
-    </div>
-</nav>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3">
+            <a href="index.html" class="block text-steel-blue-600 font-bold uppercase tracking-wider text-sm">Home</a>
+            <a href="about_us.html" class="block text-slate-600 font-semibold uppercase tracking-wider text-sm">About
+                Us</a>
+            <a href="solutions.html"
+                class="block text-slate-600 font-semibold uppercase tracking-wider text-sm">Services</a>
+            <a href="our_clients.html" class="block text-slate-600 font-semibold uppercase tracking-wider text-sm">Our
+                Clients</a>
+            <a href="contact_us.html"
+                class="block bg-steel-blue-500 active:bg-steel-blue-600 text-white text-center font-bold py-3 rounded-lg uppercase text-sm tracking-wider shadow-md transition-colors">Contact
+                Us</a>
+        </div>
+    </nav>
 
-<!-- Hero Section -->
-<header class="relative text-center px-6 py-32 md:py-40 overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1553792533-3983e6263d5a?q=80&w=2070&auto=format&fit=crop');">
-        <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 to-steel-blue-700/70"></div>
-    </div>
-    <div class="relative z-10 max-w-3xl mx-auto">
-        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Trusted Motor Vehicle Assessment &amp; Valuation</h1>
-        <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed">Delivering accurate, impartial reports for Kenya's leading insurers, businesses, and vehicle owners. Licensed by the IRA and accredited by MAAK.</p>
-        <a href="#services" class="inline-block bg-steel-blue-500 hover:bg-steel-blue-400 text-white font-bold py-3 px-8 rounded-lg uppercase text-sm tracking-wide transition">View Our Services</a>
-    </div>
-</header>
+    <!-- Hero Section -->
+    <header class="relative text-center px-6 py-32 md:py-40 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center"
+            style="background-image: url('https://images.unsplash.com/photo-1553792533-3983e6263d5a?q=80&w=2070&auto=format&fit=crop');">
+            <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 to-steel-blue-700/70"></div>
+        </div>
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <h1
+                class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-white/80 tracking-tight mb-6 leading-tight drop-shadow-sm">
+                Trusted Motor Vehicle
+                Assessment &amp; Valuation</h1>
+            <p class="text-lg md:text-xl text-slate-200 mb-10 leading-relaxed">Delivering accurate, impartial reports
+                for
+                Kenya's leading insurers, businesses, and vehicle owners. Licensed by the IRA and accredited by MAAK.
+            </p>
+            <a href="#services"
+                class="inline-block bg-steel-blue-500 hover:bg-steel-blue-600 text-white font-bold py-4 px-10 rounded-xl uppercase text-sm tracking-widest shadow-lg shadow-steel-blue-500/30 hover:shadow-steel-blue-500/50 hover:-translate-y-0.5 transition-all duration-300">View
+                Our Services</a>
+        </div>
+    </header>
 
-<!-- Core Services Section -->
-<section id="services" class="py-20 md:py-28">
-    <div class="container mx-auto px-6 text-center">
-        <p class="text-steel-blue-500 font-semibold uppercase tracking-wider text-sm mb-2">What We Do</p>
-        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Our Core Services</h2>
-        <div class="w-16 h-1 bg-steel-blue-500 mx-auto mb-12 rounded-full"></div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="p-8 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition group">
-                <div class="w-12 h-12 bg-steel-blue-500/10 text-steel-blue-500 rounded-lg flex items-center justify-center mb-5 mx-auto">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+    <!-- Core Services Section -->
+    <section id="services" class="py-20 md:py-28">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-steel-blue-600 font-bold uppercase tracking-widest text-sm mb-3 block">What We Do</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Our Core Services</h2>
+            <div class="w-16 h-1 bg-steel-blue-500 mx-auto mb-12 rounded-full"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div
+                    class="p-8 bg-white border border-slate-200/60 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group border-slate-200/60 ring-1 ring-slate-900/5">
+                    <div
+                        class="w-12 h-12 bg-steel-blue-500/10 text-steel-blue-500 rounded-lg flex items-center justify-center mb-5 mx-auto">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Accident Assessment</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Thorough inspection of accident-damaged vehicles
+                        to
+                        establish the nature and extent of damage.</p>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Accident Assessment</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Thorough inspection of accident-damaged vehicles to establish the nature and extent of damage.</p>
-            </div>
-            <div class="p-8 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition group">
-                <div class="w-12 h-12 bg-steel-blue-500/10 text-steel-blue-500 rounded-lg flex items-center justify-center mb-5 mx-auto">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/></svg>
+                <div
+                    class="p-8 bg-white border border-slate-200/60 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group border-slate-200/60 ring-1 ring-slate-900/5">
+                    <div
+                        class="w-12 h-12 bg-steel-blue-500/10 text-steel-blue-500 rounded-lg flex items-center justify-center mb-5 mx-auto">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Pre-Insurance Valuation</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Vehicle appraisal and valuations for units
+                        intended
+                        for insurance cover against risks.</p>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Pre-Insurance Valuation</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Vehicle appraisal and valuations for units intended for insurance cover against risks.</p>
-            </div>
-            <div class="p-8 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition group">
-                <div class="w-12 h-12 bg-steel-blue-500/10 text-steel-blue-500 rounded-lg flex items-center justify-center mb-5 mx-auto">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                <div
+                    class="p-8 bg-white border border-slate-200/60 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group border-slate-200/60 ring-1 ring-slate-900/5">
+                    <div
+                        class="w-12 h-12 bg-steel-blue-500/10 text-steel-blue-500 rounded-lg flex items-center justify-center mb-5 mx-auto">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Finance Collateral Valuation</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Establishing vehicle value as security for loans,
+                        for banks, SACCOs and similar institutions.</p>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Finance Collateral Valuation</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Establishing vehicle value as security for loans, for banks, SACCOs and similar institutions.</p>
-            </div>
-            <div class="p-8 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-lg transition group">
-                <div class="w-12 h-12 bg-steel-blue-500/10 text-steel-blue-500 rounded-lg flex items-center justify-center mb-5 mx-auto">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                <div
+                    class="p-8 bg-white border border-slate-200/60 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group border-slate-200/60 ring-1 ring-slate-900/5">
+                    <div
+                        class="w-12 h-12 bg-steel-blue-500/10 text-steel-blue-500 rounded-lg flex items-center justify-center mb-5 mx-auto">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Post-Repairs Re-Inspection</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Verification that restoration work has been
+                        executed correctly per the assessment report.</p>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Post-Repairs Re-Inspection</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Verification that restoration work has been executed correctly per the assessment report.</p>
+            </div>
+            <a href="solutions.html"
+                class="inline-block mt-10 text-steel-blue-500 hover:text-steel-blue-600 font-bold transition">View all
+                services &rarr;</a>
+        </div>
+    </section>
+
+    <!-- Xenon Advantage Section -->
+    <section class="bg-slate-50/50 py-20 md:py-28">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-steel-blue-600 font-bold uppercase tracking-widest text-sm mb-3 block">Why Xenon</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">The Xenon Advantage</h2>
+            <div class="w-16 h-1 bg-steel-blue-500 mx-auto mb-12 rounded-full"></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="p-8 bg-white rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold mb-3">Extensive Reach</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Branches across Kenya — Nairobi, Mombasa, Kisumu,
+                        Nakuru, Eldoret, Meru, Nyeri, Machakos and Kitui — minimizing mileage billing for cost-effective
+                        service.</p>
+                </div>
+                <div class="p-8 bg-white rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold mb-3">Technical Competence</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Over 10 years in operation and 50,000+ completed
+                        reports. Industry-leading experience and insight on every engagement.</p>
+                </div>
+                <div class="p-8 bg-white rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold mb-3">Operational Excellence</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Refined internal processes and streamlined
+                        workflows that maximize productivity — fast and efficient without compromising accuracy.</p>
+                </div>
+            </div>
+            <a href="about_us.html"
+                class="inline-block mt-10 bg-steel-blue-500 hover:bg-steel-blue-600 text-white font-bold py-4 px-10 rounded-xl uppercase text-sm tracking-widest shadow-lg shadow-steel-blue-500/30 hover:shadow-steel-blue-500/50 hover:-translate-y-0.5 transition-all duration-300">Learn
+                More About Us</a>
+        </div>
+    </section>
+
+    <!-- Clientele Snapshot Section -->
+    <section class="py-20 md:py-28">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-steel-blue-600 font-bold uppercase tracking-widest text-sm mb-3 block">Our Clients</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Proudly Serving Kenya's Key Sectors</h2>
+            <div class="w-16 h-1 bg-steel-blue-500 mx-auto mb-12 rounded-full"></div>
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <span class="bg-slate-100 text-gray-700 font-semibold text-sm py-2 px-5 rounded-full">Insurance
+                    Companies</span>
+                <span class="bg-slate-100 text-gray-700 font-semibold text-sm py-2 px-5 rounded-full">Financial
+                    Institutions</span>
+                <span class="bg-slate-100 text-gray-700 font-semibold text-sm py-2 px-5 rounded-full">Government
+                    Agencies</span>
+                <span class="bg-slate-100 text-gray-700 font-semibold text-sm py-2 px-5 rounded-full">Law Firms</span>
+                <span class="bg-slate-100 text-gray-700 font-semibold text-sm py-2 px-5 rounded-full">Corporate Fleet
+                    Owners</span>
+                <span class="bg-slate-100 text-gray-700 font-semibold text-sm py-2 px-5 rounded-full">Individual Vehicle
+                    Owners</span>
+            </div>
+            <h3 class="text-xl font-bold mb-6">Trusted by the Best</h3>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="h-16 w-32 bg-slate-100 rounded-lg flex items-center justify-center"><span
+                        class="text-slate-400 text-sm">Logo</span></div>
+                <div class="h-16 w-32 bg-slate-100 rounded-lg flex items-center justify-center"><span
+                        class="text-slate-400 text-sm">Logo</span></div>
+                <div class="h-16 w-32 bg-slate-100 rounded-lg flex items-center justify-center"><span
+                        class="text-slate-400 text-sm">Logo</span></div>
+                <div class="h-16 w-32 bg-slate-100 rounded-lg flex items-center justify-center"><span
+                        class="text-slate-400 text-sm">Logo</span></div>
             </div>
         </div>
-        <a href="solutions.html" class="inline-block mt-10 text-steel-blue-500 hover:text-steel-blue-600 font-bold transition">View all services &rarr;</a>
-    </div>
-</section>
+    </section>
 
-<!-- Xenon Advantage Section -->
-<section class="bg-gray-50 py-20 md:py-28">
-    <div class="container mx-auto px-6 text-center">
-        <p class="text-steel-blue-500 font-semibold uppercase tracking-wider text-sm mb-2">Why Xenon</p>
-        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">The Xenon Advantage</h2>
-        <div class="w-16 h-1 bg-steel-blue-500 mx-auto mb-12 rounded-full"></div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div class="p-8 bg-white rounded-xl shadow-sm">
-                <h3 class="text-xl font-bold mb-3">Extensive Reach</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Branches across Kenya — Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Meru, Nyeri, Machakos and Kitui — minimizing mileage billing for cost-effective service.</p>
+    <!-- Final CTA Section -->
+    <section
+        class="bg-gradient-to-br from-steel-blue-600 via-steel-blue-500 to-sky-600 text-white py-24 relative overflow-hidden">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Ready for a Consultation?</h2>
+            <p class="text-lg text-white/80 mb-8 max-w-xl mx-auto">Contact us today for a detailed assessment or
+                valuation report. We're here to help.</p>
+            <a href="contact_us.html"
+                class="inline-block bg-white text-steel-blue-600 hover:bg-slate-100 font-bold py-3 px-8 rounded-lg uppercase text-sm tracking-wide transition">Get
+                in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <img src="static/images/xenon_logo.svg" alt="Xenon Logo" class="h-10 mb-4">
+                <p class="text-sm text-slate-400">&copy; 2026 Xenon Auto Assessors &amp; Valuers. All Rights Reserved.
+                </p>
             </div>
-            <div class="p-8 bg-white rounded-xl shadow-sm">
-                <h3 class="text-xl font-bold mb-3">Technical Competence</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Over 10 years in operation and 50,000+ completed reports. Industry-leading experience and insight on every engagement.</p>
+            <div>
+                <h3 class="font-bold text-white mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="solutions.html" class="hover:text-white transition">Services</a></li>
+                    <li><a href="about_us.html" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="contact_us.html" class="hover:text-white transition">Contact</a></li>
+                    <li><a href="our_clients.html" class="hover:text-white transition">Our Clients</a></li>
+                </ul>
             </div>
-            <div class="p-8 bg-white rounded-xl shadow-sm">
-                <h3 class="text-xl font-bold mb-3">Operational Excellence</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Refined internal processes and streamlined workflows that maximize productivity — fast and efficient without compromising accuracy.</p>
+            <div>
+                <h3 class="font-bold text-white mb-4">Head Office</h3>
+                <p class="text-sm leading-relaxed">KCB Building, Enterprise Rd.<br>6th Floor, Suite 4, Industrial Area,
+                    Nairobi</p>
+                <p class="text-sm mt-2">Phone: 0710 420234, 0725 777195</p>
             </div>
         </div>
-        <a href="about_us.html" class="inline-block mt-10 bg-steel-blue-500 hover:bg-steel-blue-600 text-white font-bold py-3 px-8 rounded-lg uppercase text-sm tracking-wide transition">Learn More About Us</a>
-    </div>
-</section>
+    </footer>
 
-<!-- Clientele Snapshot Section -->
-<section class="py-20 md:py-28">
-    <div class="container mx-auto px-6 text-center">
-        <p class="text-steel-blue-500 font-semibold uppercase tracking-wider text-sm mb-2">Our Clients</p>
-        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Proudly Serving Kenya's Key Sectors</h2>
-        <div class="w-16 h-1 bg-steel-blue-500 mx-auto mb-12 rounded-full"></div>
-        <div class="flex flex-wrap justify-center gap-4 mb-12">
-            <span class="bg-gray-100 text-gray-700 font-semibold text-sm py-2 px-5 rounded-full">Insurance Companies</span>
-            <span class="bg-gray-100 text-gray-700 font-semibold text-sm py-2 px-5 rounded-full">Financial Institutions</span>
-            <span class="bg-gray-100 text-gray-700 font-semibold text-sm py-2 px-5 rounded-full">Government Agencies</span>
-            <span class="bg-gray-100 text-gray-700 font-semibold text-sm py-2 px-5 rounded-full">Law Firms</span>
-            <span class="bg-gray-100 text-gray-700 font-semibold text-sm py-2 px-5 rounded-full">Corporate Fleet Owners</span>
-            <span class="bg-gray-100 text-gray-700 font-semibold text-sm py-2 px-5 rounded-full">Individual Vehicle Owners</span>
-        </div>
-        <h3 class="text-xl font-bold mb-6">Trusted by the Best</h3>
-        <div class="flex flex-wrap justify-center gap-6">
-            <div class="h-16 w-32 bg-gray-100 rounded-lg flex items-center justify-center"><span class="text-gray-400 text-sm">Logo</span></div>
-            <div class="h-16 w-32 bg-gray-100 rounded-lg flex items-center justify-center"><span class="text-gray-400 text-sm">Logo</span></div>
-            <div class="h-16 w-32 bg-gray-100 rounded-lg flex items-center justify-center"><span class="text-gray-400 text-sm">Logo</span></div>
-            <div class="h-16 w-32 bg-gray-100 rounded-lg flex items-center justify-center"><span class="text-gray-400 text-sm">Logo</span></div>
-        </div>
-    </div>
-</section>
-
-<!-- Final CTA Section -->
-<section class="bg-gradient-to-r from-steel-blue-600 to-steel-blue-500 text-white py-20">
-    <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Ready for a Consultation?</h2>
-        <p class="text-lg text-white/80 mb-8 max-w-xl mx-auto">Contact us today for a detailed assessment or valuation report. We're here to help.</p>
-        <a href="contact_us.html" class="inline-block bg-white text-steel-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg uppercase text-sm tracking-wide transition">Get in Touch</a>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-gray-900 text-gray-300 py-12">
-    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div>
-            <img src="static/images/xenon_logo.svg" alt="Xenon Logo" class="h-10 mb-4">
-            <p class="text-sm text-gray-400">&copy; 2026 Xenon Auto Assessors &amp; Valuers. All Rights Reserved.</p>
-        </div>
-        <div>
-            <h3 class="font-bold text-white mb-4">Quick Links</h3>
-            <ul class="space-y-2 text-sm">
-                <li><a href="solutions.html" class="hover:text-white transition">Services</a></li>
-                <li><a href="about_us.html" class="hover:text-white transition">About Us</a></li>
-                <li><a href="contact_us.html" class="hover:text-white transition">Contact</a></li>
-                <li><a href="our_clients.html" class="hover:text-white transition">Our Clients</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3 class="font-bold text-white mb-4">Head Office</h3>
-            <p class="text-sm leading-relaxed">KCB Building, Enterprise Rd.<br>6th Floor, Suite 4, Industrial Area, Nairobi</p>
-            <p class="text-sm mt-2">Phone: 0710 420234, 0725 777195</p>
-        </div>
-    </div>
-</footer>
-
-<script>
-    document.getElementById('menu-toggle').addEventListener('click', function () {
-        document.getElementById('mobile-menu').classList.toggle('hidden');
-    });
-</script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
 </body>
+
 </html>
