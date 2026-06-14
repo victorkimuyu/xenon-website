@@ -106,15 +106,12 @@
                         class="text-white/85 hover:text-white font-semibold text-sm transition-colors duration-300 pb-4 border-b-[3px] border-transparent">Contact
                         Us</a>
                 </div>
-                <a href="login.html"
-                    class="hidden md:inline-flex items-center justify-center gap-2 text-white hover:bg-white/10 font-medium py-2.5 px-4 rounded-sm text-sm transition-colors md:mb-[9px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                    </svg>
-                    Staff Login
-                </a>
+                <div class="hidden md:flex items-center md:mb-[9px]">
+                    <span class="text-xs text-lime-100 font-medium mr-3 tracking-wide text-right leading-tight">Need an Assessment or<br>Valuation Report?</span>
+                    <a href="#" class="open-service-modal inline-flex items-center justify-center gap-2 bg-xenon-blue-600 text-white hover:bg-xenon-blue-700 font-medium py-2.5 px-5 rounded-sm text-sm transition-colors shadow-sm">
+                        Request Service
+                    </a>
+                </div>
                 <button id="menu-toggle"
                     class="md:hidden ml-auto text-white hover:text-white/80 focus:outline-none transition-colors"
                     aria-label="Toggle navigation menu">
@@ -127,15 +124,12 @@
                 <a href="index.html" class="block font-bold text-sm">Home</a>
                 <a href="about_us.html" class="block text-white/85 font-semibold text-sm">About Us</a>
                 <a href="solutions.html" class="block text-white/85 font-semibold text-sm">Services</a>
-                <a href="login.html"
-                    class="flex items-center justify-center gap-2 text-white bg-white/5 hover:bg-white/10 font-medium py-3 rounded-sm text-sm transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                    </svg>
-                    Staff Login
-                </a>
+                <div class="flex flex-col gap-2 mt-2">
+                    <span class="text-xs text-lime-100 font-medium text-center tracking-wide leading-tight">Need an Assessment or<br>Valuation Report?</span>
+                    <a href="#" class="open-service-modal flex items-center justify-center gap-2 text-white bg-xenon-blue-600 hover:bg-xenon-blue-700 font-medium py-3 rounded-sm text-sm transition-colors shadow-sm">
+                        Request Service
+                    </a>
+                </div>
                 <div class="pt-3 mt-4 border-t border-white/20 space-y-3">
                     <div class="flex items-center gap-3">
                         <div
@@ -513,6 +507,29 @@
                     <li><a href="solutions.html" class="hover:text-white transition">Services</a></li>
                     <li><a href="about_us.html" class="hover:text-white transition">About Us</a></li>
                     <li><a href="contact_us.html" class="hover:text-white transition">Contact</a></li>
+                    <li class="pt-2 mt-2 border-t border-slate-700/50"></li>
+                    <li>
+                        <a href="solutions.html#faq" class="flex items-center gap-2 hover:text-white transition text-slate-400 group">
+                            <svg class="w-4 h-4 text-slate-500 group-hover:text-xenon-green-500 transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path fill="currentColor" d="M12.838 17.638q.362-.363.362-.888t-.362-.888t-.888-.362t-.887.363t-.363.887t.363.888t.887.362t.888-.363M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m.1-12.3q.625 0 1.088.4t.462 1q0 .55-.337.975t-.763.8q-.575.5-1.012 1.1t-.438 1.35q0 .35.263.588t.612.237q.375 0 .638-.25t.337-.625q.1-.525.45-.937t.75-.788q.575-.55.988-1.2t.412-1.45q0-1.275-1.037-2.087T12.1 6q-.95 0-1.812.4T8.975 7.625q-.175.3-.112.638t.337.512q.35.2.725.125t.625-.425q.275-.375.688-.575t.862-.2" />
+                            </svg>
+                            Frequently Asked Questions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="solutions.html#fee-calculator" class="flex items-center gap-2 hover:text-white transition text-slate-400 group">
+                            <svg class="w-4 h-4 text-slate-500 group-hover:text-xenon-green-500 transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" d="M5 9h14" />
+                                    <path stroke-linejoin="round" d="M5 3h14v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z" />
+                                    <path stroke-linecap="round" d="M9 13h1m4 0h1m-6 4h1m4 0h1" />
+                                </g>
+                            </svg>
+                            Fee Calculator
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div>
@@ -528,6 +545,125 @@
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
     </script>
+
+    <!-- Request Service Modal -->
+    <div id="service-modal" class="hidden fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <!-- Overlay -->
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-slate-900/75 transition-opacity close-service-modal" aria-hidden="true"></div>
+
+            <!-- Modal Panel -->
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="relative inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-xl w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mt-3 sm:mt-0 text-left w-full">
+                            <div class="flex justify-between items-center mb-4">
+                                <h3 class="text-xl leading-6 font-bold text-slate-900" id="modal-title">
+                                    Request a Service
+                                </h3>
+                                <button type="button" class="close-service-modal bg-white rounded-md text-slate-400 hover:text-slate-500 focus:outline-none">
+                                    <span class="sr-only">Close</span>
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mt-2">
+                                <form id="service-form" class="space-y-6">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label for="first_name" class="block text-sm font-semibold text-slate-800 mb-1.5">First Name *</label>
+                                            <input type="text" name="first_name" id="first_name" required class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2 px-3 transition font-medium">
+                                        </div>
+                                        <div>
+                                            <label for="last_name" class="block text-sm font-semibold text-slate-800 mb-1.5">Last Name</label>
+                                            <input type="text" name="last_name" id="last_name" class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2 px-3 transition font-medium">
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label for="phone" class="block text-sm font-semibold text-slate-800 mb-1.5">Phone Number *</label>
+                                            <input type="tel" name="phone" id="phone" required class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2 px-3 transition font-medium">
+                                        </div>
+                                        <div>
+                                            <label for="email" class="block text-sm font-semibold text-slate-800 mb-1.5">Email Address</label>
+                                            <input type="email" name="email" id="email" class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2 px-3 transition font-medium">
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label for="registration" class="block text-sm font-semibold text-slate-800 mb-1.5">Vehicle Registration *</label>
+                                            <input type="text" name="registration" id="registration" required class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2 px-3 transition font-medium">
+                                        </div>
+                                        <div>
+                                            <label for="model" class="block text-sm font-semibold text-slate-800 mb-1.5">Vehicle Make/Model *</label>
+                                            <input type="text" name="model" id="model" required placeholder="e.g. Toyota Prado" class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2 px-3 transition font-medium">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="location" class="block text-sm font-semibold text-slate-800 mb-1.5">Current Location *</label>
+                                        <input type="text" name="location" id="location" required class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2 px-3 transition font-medium">
+                                    </div>
+                                    <div>
+                                        <label for="service_type" class="block text-sm font-semibold text-slate-800 mb-1.5">Service Type *</label>
+                                        <select id="service_type" name="service_type" required class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2.5 px-3 transition font-medium appearance-none cursor-pointer">
+                                            <option value="">Select a service...</option>
+                                            <option value="Pre-Insurance Valuation">Pre-Insurance Valuation</option>
+                                            <option value="Post-Repair Valuation">Post-Repair Valuation</option>
+                                            <option value="Accident Assessment">Accident Assessment</option>
+                                            <option value="Mechanical Breakdown">Mechanical Breakdown Assessment</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="service-photos" class="block text-sm font-semibold text-slate-800 mb-1.5">Upload Photos (Max 20)</label>
+                                        <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-slate-300 border-dashed rounded-md">
+                                            <div class="space-y-1 text-center">
+                                                <svg class="mx-auto h-12 w-12 text-slate-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
+                                                    <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <div class="flex text-sm text-slate-600 justify-center">
+                                                    <label for="service-photos" class="relative cursor-pointer bg-white rounded-md font-medium text-xenon-blue-600 hover:text-xenon-blue-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-xenon-blue-500">
+                                                        <span>Upload files</span>
+                                                        <input id="service-photos" name="photos[]" type="file" class="sr-only" multiple accept="image/*">
+                                                    </label>
+                                                    <p class="pl-1">or drag and drop</p>
+                                                </div>
+                                                <p class="text-xs text-slate-500">
+                                                    PNG, JPG, GIF up to 20 images
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Honeypot -->
+                                    <div class="hidden">
+                                        <label>Leave this empty: <input type="text" name="website_url"></label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse border-t border-slate-200">
+                    <button type="submit" form="service-form" id="service-submit-btn" class="w-full inline-flex justify-center items-center rounded-sm border border-transparent shadow-sm px-4 py-2 bg-xenon-blue-600 text-base font-medium text-white hover:bg-xenon-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-xenon-blue-500 sm:ml-3 sm:w-auto sm:text-sm transition-colors">
+                        <svg id="service-btn-loader" class="animate-spin -ml-1 mr-2 h-4 w-4 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        <span id="service-btn-text">Submit Request</span>
+                    </button>
+                    <button type="button" class="close-service-modal mt-3 w-full inline-flex justify-center rounded-sm border border-slate-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-xenon-blue-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Service Modal JS -->
+    <script src="static/js/service_modal.js"></script>
+
 </body>
 
 </html>
