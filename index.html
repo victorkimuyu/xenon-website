@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="static/css/global.css">
 </head>
 
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-xenon-blue-500/30">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-xenon-green-500/30">
     <header class="bg-[#f7f5ee]">
         <div class="h-[2px] w-full bg-gradient-to-r from-xenon-green-600 to-lime-400"></div>
         <div class="container mx-auto px-6 py-3">
@@ -60,7 +60,7 @@
                 <div
                     class="flex items-center gap-4 px-4 lg:px-6 py-3 lg:py-5 border-b md:border-b-0 md:border-r border-slate-200">
                     <div
-                        class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-xenon-blue-500/10 text-xenon-blue-600 flex items-center justify-center flex-shrink-0">
+                        class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-xenon-green-500/10 text-xenon-green-600 flex items-center justify-center flex-shrink-0">
                         <svg class="w-5 h-5 lg:w-6 lg:h-6" fill="none" stroke="currentColor" stroke-width="2"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -107,8 +107,10 @@
                         Us</a>
                 </div>
                 <div class="hidden md:flex items-center md:mb-[9px]">
-                    <span class="text-xs text-lime-100 font-medium mr-3 tracking-wide text-right leading-tight">Need an Assessment or<br>Valuation Report?</span>
-                    <a href="#" class="open-service-modal inline-flex items-center justify-center gap-2 bg-xenon-blue-600 text-white hover:bg-xenon-blue-700 font-medium py-2.5 px-5 rounded-sm text-sm transition-colors shadow-sm">
+                    <span class="text-xs text-lime-100 font-medium mr-3 tracking-wide text-right leading-tight">Need an
+                        Assessment or<br>Valuation Report?</span>
+                    <a href="#"
+                        class="open-service-modal inline-flex items-center justify-center gap-2 bg-xenon-blue-600 text-white hover:bg-xenon-blue-700 font-medium py-2.5 px-5 rounded-sm text-sm transition-colors shadow-sm">
                         Request Service
                     </a>
                 </div>
@@ -125,8 +127,10 @@
                 <a href="about_us.html" class="block text-white/85 font-semibold text-sm">About Us</a>
                 <a href="solutions.html" class="block text-white/85 font-semibold text-sm">Services</a>
                 <div class="flex flex-col gap-2 mt-2">
-                    <span class="text-xs text-lime-100 font-medium text-center tracking-wide leading-tight">Need an Assessment or<br>Valuation Report?</span>
-                    <a href="#" class="open-service-modal flex items-center justify-center gap-2 text-white bg-xenon-blue-600 hover:bg-xenon-blue-700 font-medium py-3 rounded-sm text-sm transition-colors shadow-sm">
+                    <span class="text-xs text-lime-100 font-medium text-center tracking-wide leading-tight">Need an
+                        Assessment or<br>Valuation Report?</span>
+                    <a href="#"
+                        class="open-service-modal flex items-center justify-center gap-2 bg-xenon-blue-600 text-white hover:bg-xenon-blue-700 font-medium py-3 rounded-sm text-sm transition-colors shadow-sm">
                         Request Service
                     </a>
                 </div>
@@ -299,13 +303,33 @@
                         <h3 class="text-lg font-bold mb-2 text-slate-900">Accident Assessment</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-5">Thorough inspection of accident-damaged
                             vehicles to establish the nature and extent of damage.</p>
-                        <a href="solutions.html#accident"
-                            class="text-xenon-blue-600 text-sm font-bold uppercase tracking-wide hover:text-xenon-blue-700 flex items-center gap-1 mt-auto w-fit">Read
-                            More <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-2"
-                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3">
-                                </path>
-                            </svg></a>
+                        <div class="mt-auto flex items-center justify-between gap-4 flex-wrap pt-2">
+                            <a href="solutions.html#accident"
+                                class="group/link text-xenon-green-600 text-sm font-bold uppercase tracking-wide hover:text-xenon-green-700 flex items-center gap-1 w-fit">Read
+                                More <svg
+                                    class="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-2"
+                                    fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                                    </path>
+                                </svg></a>
+                            <button
+                                class="open-pdf-modal group flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors w-fit"
+                                data-report="assessment">
+
+                                <svg class="w-5 h-5 text-red-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M19 11c0-.818 0-1.57-.152-1.937s-.441-.657-1.02-1.235l-4.736-4.736c-.499-.499-.748-.748-1.058-.896a2 2 0 0 0-.197-.082C11.514 2 11.161 2 10.456 2c-3.245 0-4.868 0-5.967.886a4 4 0 0 0-.603.603C3 4.59 3 6.211 3 9.456V14c0 3.771 0 5.657 1.172 6.828S7.229 22 11 22h8M12 2.5V3c0 2.828 0 4.243.879 5.121C13.757 9 15.172 9 18 9h.5" />
+                                        <path
+                                            d="M21 14h-2a1 1 0 0 0-1 1v1.5m0 0V19m0-2.5h2.5M7 19v-2m0 0v-3h1.5a1.5 1.5 0 0 1 0 3zm5.5-3h1.286c.947 0 1.714.746 1.714 1.667v1.666c0 .92-.768 1.667-1.714 1.667H12.5z" />
+                                    </g>
+                                </svg>
+                                View Sample Report
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <!-- Card 2 -->
@@ -317,13 +341,33 @@
                         <h3 class="text-lg font-bold mb-2 text-slate-900">Pre-Insurance Valuation</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-5">Vehicle appraisal and valuations for
                             units intended for insurance cover against risks.</p>
-                        <a href="solutions.html#valuation"
-                            class="text-xenon-green-600 text-sm font-bold uppercase tracking-wide hover:text-xenon-green-700 flex items-center gap-1 mt-auto w-fit">Read
-                            More <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-2"
-                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3">
-                                </path>
-                            </svg></a>
+                        <div class="mt-auto flex items-center justify-between gap-4 flex-wrap pt-2">
+                            <a href="solutions.html#valuation"
+                                class="group/link text-xenon-green-600 text-sm font-bold uppercase tracking-wide hover:text-xenon-green-700 flex items-center gap-1 w-fit">Read
+                                More <svg
+                                    class="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-2"
+                                    fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                                    </path>
+                                </svg></a>
+                            <button
+                                class="open-pdf-modal group flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors w-fit"
+                                data-report="valuation">
+
+                                <svg class="w-5 h-5 text-red-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M19 11c0-.818 0-1.57-.152-1.937s-.441-.657-1.02-1.235l-4.736-4.736c-.499-.499-.748-.748-1.058-.896a2 2 0 0 0-.197-.082C11.514 2 11.161 2 10.456 2c-3.245 0-4.868 0-5.967.886a4 4 0 0 0-.603.603C3 4.59 3 6.211 3 9.456V14c0 3.771 0 5.657 1.172 6.828S7.229 22 11 22h8M12 2.5V3c0 2.828 0 4.243.879 5.121C13.757 9 15.172 9 18 9h.5" />
+                                        <path
+                                            d="M21 14h-2a1 1 0 0 0-1 1v1.5m0 0V19m0-2.5h2.5M7 19v-2m0 0v-3h1.5a1.5 1.5 0 0 1 0 3zm5.5-3h1.286c.947 0 1.714.746 1.714 1.667v1.666c0 .92-.768 1.667-1.714 1.667H12.5z" />
+                                    </g>
+                                </svg>
+                                View Sample Report
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <!-- Card 3 -->
@@ -335,18 +379,38 @@
                         <h3 class="text-lg font-bold mb-2 text-slate-900">Post-Repairs Inspection</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-5">Verification that restoration work has
                             been executed correctly per the assessment report.</p>
-                        <a href="solutions.html#repairs"
-                            class="text-xenon-green-600 text-sm font-bold uppercase tracking-wide hover:text-xenon-green-700 flex items-center gap-1 mt-auto w-fit">Read
-                            More <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-2"
-                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3">
-                                </path>
-                            </svg></a>
+                        <div class="mt-auto flex items-center justify-between gap-4 flex-wrap pt-2">
+                            <a href="solutions.html#repairs"
+                                class="group/link text-xenon-green-600 text-sm font-bold uppercase tracking-wide hover:text-xenon-green-700 flex items-center gap-1 w-fit">Read
+                                More <svg
+                                    class="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-2"
+                                    fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                                    </path>
+                                </svg></a>
+                            <button
+                                class="open-pdf-modal group flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors w-fit"
+                                data-report="reinspection">
+
+                                <svg class="w-5 h-5 text-red-500" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M19 11c0-.818 0-1.57-.152-1.937s-.441-.657-1.02-1.235l-4.736-4.736c-.499-.499-.748-.748-1.058-.896a2 2 0 0 0-.197-.082C11.514 2 11.161 2 10.456 2c-3.245 0-4.868 0-5.967.886a4 4 0 0 0-.603.603C3 4.59 3 6.211 3 9.456V14c0 3.771 0 5.657 1.172 6.828S7.229 22 11 22h8M12 2.5V3c0 2.828 0 4.243.879 5.121C13.757 9 15.172 9 18 9h.5" />
+                                        <path
+                                            d="M21 14h-2a1 1 0 0 0-1 1v1.5m0 0V19m0-2.5h2.5M7 19v-2m0 0v-3h1.5a1.5 1.5 0 0 1 0 3zm5.5-3h1.286c.947 0 1.714.746 1.714 1.667v1.666c0 .92-.768 1.667-1.714 1.667H12.5z" />
+                                    </g>
+                                </svg>
+                                View Sample Report
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
             <a href="solutions.html"
-                class="inline-block mt-12 bg-white text-xenon-blue-600 border border-xenon-blue-600 hover:bg-xenon-blue-50 font-medium py-3.5 px-8 rounded-sm text-sm transition-all duration-300">View
+                class="inline-block mt-12 bg-white text-xenon-green-600 border border-xenon-green-600 hover:bg-xenon-green-50 font-medium py-3.5 px-8 rounded-sm text-sm transition-all duration-300">View
                 all Solutions</a>
         </div>
     </section>
@@ -362,7 +426,7 @@
                     <ul class="space-y-8">
                         <li class="flex items-start gap-5">
                             <div
-                                class="w-12 h-12 rounded-xl bg-xenon-blue-50 text-xenon-blue-600 flex items-center justify-center flex-shrink-0 mt-1">
+                                class="w-12 h-12 rounded-xl bg-xenon-green-50 text-xenon-green-600 flex items-center justify-center flex-shrink-0 mt-1">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -393,7 +457,7 @@
                         </li>
                         <li class="flex items-start gap-5">
                             <div
-                                class="w-12 h-12 rounded-xl bg-xenon-blue-50 text-xenon-blue-600 flex items-center justify-center flex-shrink-0 mt-1">
+                                class="w-12 h-12 rounded-xl bg-xenon-green-50 text-xenon-green-600 flex items-center justify-center flex-shrink-0 mt-1">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z">
@@ -432,7 +496,7 @@
                         </li>
                         <li class="flex items-start gap-5">
                             <div
-                                class="w-12 h-12 rounded-xl bg-xenon-blue-50 text-xenon-blue-600 flex items-center justify-center flex-shrink-0 mt-1">
+                                class="w-12 h-12 rounded-xl bg-xenon-green-50 text-xenon-green-600 flex items-center justify-center flex-shrink-0 mt-1">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -475,13 +539,13 @@
     </section>
     <!-- Final CTA Section -->
     <section
-        class="border-t border-slate-200 bg-gradient-to-br from-xenon-blue-600 to-xenon-green-600 text-white py-24 relative overflow-hidden">
+        class="border-t border-slate-200 bg-gradient-to-br from-xenon-green-600 to-xenon-green-600 text-white py-24 relative overflow-hidden">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight mb-4">Ready for a Consultation?</h2>
             <p class="text-lg text-white/80 mb-8 max-w-xl mx-auto">Contact us today for a detailed assessment or
                 valuation report. We're here to help.</p>
             <a href="contact_us.html"
-                class="inline-block bg-white text-xenon-blue-600 hover:bg-slate-100 font-bold py-3 px-8 rounded-sm uppercase text-xs tracking-widest transition">Get
+                class="inline-block bg-white text-xenon-green-600 hover:bg-slate-100 font-bold py-3 px-8 rounded-sm uppercase text-xs tracking-widest transition">Get
                 in Touch</a>
         </div>
     </section>
@@ -509,17 +573,22 @@
                     <li><a href="contact_us.html" class="hover:text-white transition">Contact</a></li>
                     <li class="pt-2 mt-2 border-t border-slate-700/50"></li>
                     <li>
-                        <a href="solutions.html#faq" class="flex items-center gap-2 hover:text-white transition text-slate-400 group">
-                            <svg class="w-4 h-4 text-slate-500 group-hover:text-xenon-green-500 transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <a href="solutions.html#faq"
+                            class="flex items-center gap-2 hover:text-white transition text-slate-400 group">
+                            <svg class="w-4 h-4 text-slate-500 group-hover:text-xenon-green-500 transition-colors"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path d="M0 0h24v24H0z" fill="none" />
-                                <path fill="currentColor" d="M12.838 17.638q.362-.363.362-.888t-.362-.888t-.888-.362t-.887.363t-.363.887t.363.888t.887.362t.888-.363M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m.1-12.3q.625 0 1.088.4t.462 1q0 .55-.337.975t-.763.8q-.575.5-1.012 1.1t-.438 1.35q0 .35.263.588t.612.237q.375 0 .638-.25t.337-.625q.1-.525.45-.937t.75-.788q.575-.55.988-1.2t.412-1.45q0-1.275-1.037-2.087T12.1 6q-.95 0-1.812.4T8.975 7.625q-.175.3-.112.638t.337.512q.35.2.725.125t.625-.425q.275-.375.688-.575t.862-.2" />
+                                <path fill="currentColor"
+                                    d="M12.838 17.638q.362-.363.362-.888t-.362-.888t-.888-.362t-.887.363t-.363.887t.363.888t.887.362t.888-.363M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m.1-12.3q.625 0 1.088.4t.462 1q0 .55-.337.975t-.763.8q-.575.5-1.012 1.1t-.438 1.35q0 .35.263.588t.612.237q.375 0 .638-.25t.337-.625q.1-.525.45-.937t.75-.788q.575-.55.988-1.2t.412-1.45q0-1.275-1.037-2.087T12.1 6q-.95 0-1.812.4T8.975 7.625q-.175.3-.112.638t.337.512q.35.2.725.125t.625-.425q.275-.375.688-.575t.862-.2" />
                             </svg>
                             Frequently Asked Questions
                         </a>
                     </li>
                     <li>
-                        <a href="solutions.html#fee-calculator" class="flex items-center gap-2 hover:text-white transition text-slate-400 group">
-                            <svg class="w-4 h-4 text-slate-500 group-hover:text-xenon-green-500 transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <a href="solutions.html#fee-calculator"
+                            class="flex items-center gap-2 hover:text-white transition text-slate-400 group">
+                            <svg class="w-4 h-4 text-slate-500 group-hover:text-xenon-green-500 transition-colors"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path d="M0 0h24v24H0z" fill="none" />
                                 <g fill="none" stroke="currentColor" stroke-width="1.5">
                                     <path stroke-linecap="round" d="M5 9h14" />
@@ -547,14 +616,16 @@
     </script>
 
     <!-- Request Service Modal -->
-    <div id="service-modal" class="hidden fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div id="service-modal" class="hidden fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title"
+        role="dialog" aria-modal="true">
         <!-- Overlay -->
         <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
             <div class="fixed inset-0 bg-slate-900/75 transition-opacity close-service-modal" aria-hidden="true"></div>
 
             <!-- Modal Panel -->
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-            <div class="relative inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-xl w-full">
+            <div
+                class="relative inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-xl w-full">
                 <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                     <div class="sm:flex sm:items-start">
                         <div class="mt-3 sm:mt-0 text-left w-full">
@@ -562,10 +633,13 @@
                                 <h3 class="text-xl leading-6 font-bold text-slate-900" id="modal-title">
                                     Request a Service
                                 </h3>
-                                <button type="button" class="close-service-modal bg-white rounded-md text-slate-400 hover:text-slate-500 focus:outline-none">
+                                <button type="button"
+                                    class="close-service-modal bg-white rounded-md text-slate-400 hover:text-slate-500 focus:outline-none">
                                     <span class="sr-only">Close</span>
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12" />
                                     </svg>
                                 </button>
                             </div>
@@ -573,60 +647,95 @@
                                 <form id="service-form" class="space-y-6">
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <div>
-                                            <label for="first_name" class="block text-sm font-semibold text-slate-800 mb-1.5">First Name *</label>
-                                            <input type="text" name="first_name" id="first_name" required class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2 px-3 transition font-medium">
+                                            <label for="first_name"
+                                                class="block text-sm font-semibold text-slate-800 mb-1.5">First Name
+                                                *</label>
+                                            <input type="text" name="first_name" id="first_name" required
+                                                class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-green-500 focus:border-xenon-green-500 block py-2 px-3 transition font-medium">
                                         </div>
                                         <div>
-                                            <label for="last_name" class="block text-sm font-semibold text-slate-800 mb-1.5">Last Name</label>
-                                            <input type="text" name="last_name" id="last_name" class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2 px-3 transition font-medium">
+                                            <label for="last_name"
+                                                class="block text-sm font-semibold text-slate-800 mb-1.5">Last
+                                                Name</label>
+                                            <input type="text" name="last_name" id="last_name"
+                                                class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-green-500 focus:border-xenon-green-500 block py-2 px-3 transition font-medium">
                                         </div>
                                     </div>
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <div>
-                                            <label for="phone" class="block text-sm font-semibold text-slate-800 mb-1.5">Phone Number *</label>
-                                            <input type="tel" name="phone" id="phone" required class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2 px-3 transition font-medium">
+                                            <label for="phone"
+                                                class="block text-sm font-semibold text-slate-800 mb-1.5">Phone Number
+                                                *</label>
+                                            <input type="tel" name="phone" id="phone" required
+                                                class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-green-500 focus:border-xenon-green-500 block py-2 px-3 transition font-medium">
                                         </div>
                                         <div>
-                                            <label for="email" class="block text-sm font-semibold text-slate-800 mb-1.5">Email Address</label>
-                                            <input type="email" name="email" id="email" class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2 px-3 transition font-medium">
+                                            <label for="email"
+                                                class="block text-sm font-semibold text-slate-800 mb-1.5">Email
+                                                Address</label>
+                                            <input type="email" name="email" id="email"
+                                                class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-green-500 focus:border-xenon-green-500 block py-2 px-3 transition font-medium">
                                         </div>
                                     </div>
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <div>
-                                            <label for="registration" class="block text-sm font-semibold text-slate-800 mb-1.5">Vehicle Registration *</label>
-                                            <input type="text" name="registration" id="registration" required class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2 px-3 transition font-medium">
+                                            <label for="registration"
+                                                class="block text-sm font-semibold text-slate-800 mb-1.5">Vehicle
+                                                Registration *</label>
+                                            <input type="text" name="registration" id="registration" required
+                                                class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-green-500 focus:border-xenon-green-500 block py-2 px-3 transition font-medium">
                                         </div>
                                         <div>
-                                            <label for="model" class="block text-sm font-semibold text-slate-800 mb-1.5">Vehicle Make/Model *</label>
-                                            <input type="text" name="model" id="model" required placeholder="e.g. Toyota Prado" class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2 px-3 transition font-medium">
+                                            <label for="model"
+                                                class="block text-sm font-semibold text-slate-800 mb-1.5">Vehicle
+                                                Make/Model *</label>
+                                            <input type="text" name="model" id="model" required
+                                                placeholder="e.g. Toyota Prado"
+                                                class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-green-500 focus:border-xenon-green-500 block py-2 px-3 transition font-medium">
                                         </div>
                                     </div>
                                     <div>
-                                        <label for="location" class="block text-sm font-semibold text-slate-800 mb-1.5">Current Location *</label>
-                                        <input type="text" name="location" id="location" required class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2 px-3 transition font-medium">
+                                        <label for="location"
+                                            class="block text-sm font-semibold text-slate-800 mb-1.5">Current Location
+                                            *</label>
+                                        <input type="text" name="location" id="location" required
+                                            class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-green-500 focus:border-xenon-green-500 block py-2 px-3 transition font-medium">
                                     </div>
                                     <div>
-                                        <label for="service_type" class="block text-sm font-semibold text-slate-800 mb-1.5">Service Type *</label>
-                                        <select id="service_type" name="service_type" required class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-blue-500 focus:border-xenon-blue-500 block py-2.5 px-3 transition font-medium appearance-none cursor-pointer">
+                                        <label for="service_type"
+                                            class="block text-sm font-semibold text-slate-800 mb-1.5">Service Type
+                                            *</label>
+                                        <select id="service_type" name="service_type" required
+                                            class="w-full bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-xenon-green-500 focus:border-xenon-green-500 block py-2.5 px-3 transition font-medium appearance-none cursor-pointer">
                                             <option value="">Select a service...</option>
                                             <option value="Pre-Insurance Valuation">Pre-Insurance Valuation</option>
                                             <option value="Post-Repair Valuation">Post-Repair Valuation</option>
                                             <option value="Accident Assessment">Accident Assessment</option>
-                                            <option value="Mechanical Breakdown">Mechanical Breakdown Assessment</option>
+                                            <option value="Mechanical Breakdown">Mechanical Breakdown Assessment
+                                            </option>
                                             <option value="Other">Other</option>
                                         </select>
                                     </div>
                                     <div>
-                                        <label for="service-photos" class="block text-sm font-semibold text-slate-800 mb-1.5">Upload Photos (Max 20)</label>
-                                        <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-slate-300 border-dashed rounded-md">
+                                        <label for="service-photos"
+                                            class="block text-sm font-semibold text-slate-800 mb-1.5">Upload Photos (Max
+                                            20)</label>
+                                        <div
+                                            class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-slate-300 border-dashed rounded-md">
                                             <div class="space-y-1 text-center">
-                                                <svg class="mx-auto h-12 w-12 text-slate-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
-                                                    <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <svg class="mx-auto h-12 w-12 text-slate-400" stroke="currentColor"
+                                                    fill="none" viewBox="0 0 48 48" aria-hidden="true">
+                                                    <path
+                                                        d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
                                                 </svg>
                                                 <div class="flex text-sm text-slate-600 justify-center">
-                                                    <label for="service-photos" class="relative cursor-pointer bg-white rounded-md font-medium text-xenon-blue-600 hover:text-xenon-blue-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-xenon-blue-500">
+                                                    <label for="service-photos"
+                                                        class="relative cursor-pointer bg-white rounded-md font-medium text-xenon-green-600 hover:text-xenon-green-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-xenon-green-500">
                                                         <span>Upload files</span>
-                                                        <input id="service-photos" name="photos[]" type="file" class="sr-only" multiple accept="image/*">
+                                                        <input id="service-photos" name="photos[]" type="file"
+                                                            class="sr-only" multiple accept="image/*">
                                                     </label>
                                                     <p class="pl-1">or drag and drop</p>
                                                 </div>
@@ -646,24 +755,200 @@
                     </div>
                 </div>
                 <div class="bg-slate-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse border-t border-slate-200">
-                    <button type="submit" form="service-form" id="service-submit-btn" class="w-full inline-flex justify-center items-center rounded-sm border border-transparent shadow-sm px-4 py-2 bg-xenon-blue-600 text-base font-medium text-white hover:bg-xenon-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-xenon-blue-500 sm:ml-3 sm:w-auto sm:text-sm transition-colors">
-                        <svg id="service-btn-loader" class="animate-spin -ml-1 mr-2 h-4 w-4 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    <button type="submit" form="service-form" id="service-submit-btn"
+                        class="w-full inline-flex justify-center items-center rounded-sm border border-transparent shadow-sm px-4 py-2 bg-xenon-green-600 text-base font-medium text-white hover:bg-xenon-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-xenon-green-500 sm:ml-3 sm:w-auto sm:text-sm transition-colors">
+                        <svg id="service-btn-loader" class="animate-spin -ml-1 mr-2 h-4 w-4 text-white hidden"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                            </circle>
+                            <path class="opacity-75" fill="currentColor"
+                                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                            </path>
                         </svg>
                         <span id="service-btn-text">Submit Request</span>
                     </button>
-                    <button type="button" class="close-service-modal mt-3 w-full inline-flex justify-center rounded-sm border border-slate-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-xenon-blue-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                    <button type="button"
+                        class="close-service-modal mt-3 w-full inline-flex justify-center rounded-sm border border-slate-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-xenon-green-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
                         Cancel
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <!-- Service Modal JS -->
     <script src="static/js/service_modal.js"></script>
 
+
+    <!-- PDF Viewer Modal -->
+    <div id="pdf-modal" class="hidden fixed inset-0 z-[60] overflow-hidden flex items-center justify-center"
+        aria-labelledby="pdf-modal-title" role="dialog" aria-modal="true">
+        <!-- Background Overlay -->
+        <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity close-pdf-modal"
+            aria-hidden="true"></div>
+
+        <!-- Modal Panel -->
+        <div
+            class="relative bg-white rounded-xl text-left shadow-2xl flex flex-col w-[95vw] max-w-7xl h-[95vh] overflow-hidden ring-1 ring-slate-900/5">
+
+            <!-- Header -->
+            <div
+                class="px-4 py-3 border-b border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-slate-50 shrink-0">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center gap-2" id="pdf-modal-title">
+                        <svg class="w-6 h-6 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5">
+                            <path
+                                d="M19 11c0-.818 0-1.57-.152-1.937s-.441-.657-1.02-1.235l-4.736-4.736c-.499-.499-.748-.748-1.058-.896a2 2 0 0 0-.197-.082C11.514 2 11.161 2 10.456 2c-3.245 0-4.868 0-5.967.886a4 4 0 0 0-.603.603C3 4.59 3 6.211 3 9.456V14c0 3.771 0 5.657 1.172 6.828S7.229 22 11 22h8M12 2.5V3c0 2.828 0 4.243.879 5.121C13.757 9 15.172 9 18 9h.5M21 14h-2a1 1 0 0 0-1 1v1.5m0 0V19m0-2.5h2.5M7 19v-2m0 0v-3h1.5a1.5 1.5 0 0 1 0 3zm5.5-3h1.286c.947 0 1.714.746 1.714 1.667v1.666c0 .92-.768 1.667-1.714 1.667H12.5z" />
+                        </svg>
+                        Sample Report
+                    </h3>
+                    <div class="h-6 w-px bg-slate-300 hidden sm:block"></div>
+                    <!-- Report Selector -->
+                    <select id="pdf-report-selector"
+                        class="bg-white text-slate-800 text-sm rounded-lg border border-slate-300 focus:ring-2 focus:ring-xenon-green-500 focus:border-xenon-green-500 block px-3 py-1.5 outline-none font-medium appearance-none cursor-pointer hover:bg-slate-50 transition-colors shadow-sm">
+                        <option value="assessment">Accident Assessment</option>
+                        <option value="valuation">Pre-Insurance Valuation</option>
+                        <option value="reinspection">Re-Inspection</option>
+                    </select>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <!-- Actions -->
+                    <button type="button" id="pdf-download-btn"
+                        class="text-slate-500 hover:text-slate-900 bg-white border border-slate-300 p-2 rounded-md transition-colors"
+                        title="Download PDF">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M9 22c-9 1-8-10 0-9C6 2 23 2 22 10c10-3 10 13 1 12m-12 4l5 4l5-4m-5-10v14" />
+                        </svg>
+                    </button>
+                    <button type="button" id="pdf-print-btn"
+                        class="text-slate-500 hover:text-slate-900 bg-white border border-slate-300 p-2 rounded-md transition-colors"
+                        title="Print PDF">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 28 28">
+                            <path
+                                d="M7.004 5.765V7H6a4 4 0 0 0-4 4v7a3 3 0 0 0 3 3h2v1a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-1h2a3 3 0 0 0 3-3v-7a4 4 0 0 0-4-4h-1V5.752a2.75 2.75 0 0 0-2.754-2.75l-8.496.013a2.75 2.75 0 0 0-2.746 2.75M21 19.5V17a3 3 0 0 0-3-3h-8a3 3 0 0 0-3 3v2.5H5A1.5 1.5 0 0 1 3.5 18v-7A2.5 2.5 0 0 1 6 8.5h16a2.5 2.5 0 0 1 2.5 2.5v7a1.5 1.5 0 0 1-1.5 1.5zM19.5 5.752V7H8.504V5.765c0-.69.558-1.249 1.248-1.25l8.496-.013a1.25 1.25 0 0 1 1.252 1.25M10 15.5h8a1.5 1.5 0 0 1 1.5 1.5v5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 8.5 22v-5a1.5 1.5 0 0 1 1.5-1.5" />
+                        </svg>
+                    </button>
+                    <div class="h-6 w-px bg-slate-300"></div>
+                    <button type="button"
+                        class="close-pdf-modal text-slate-500 hover:text-red-600 bg-white border border-slate-300 p-2 rounded-md transition-colors"
+                        title="Close Viewer">
+                        <span class="sr-only">Close</span>
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Body Wrapper -->
+            <div class="flex-1 flex overflow-hidden relative">
+
+                <!-- Bookmarks Sidebar Wrapper -->
+                <div id="pdf-bookmarks-pane"
+                    class="hidden flex-col shrink-0 border-r border-slate-200 bg-slate-50 transition-all duration-300 w-64 overflow-hidden relative">
+                    <!-- Toggle Header inside Sidebar -->
+                    <button type="button" id="pdf-toggle-bookmarks"
+                        class="w-full px-4 py-3 border-b border-slate-200 bg-slate-50/90 backdrop-blur-sm sticky top-0 z-10 flex items-center gap-3 text-slate-500 hover:text-slate-900 transition-colors">
+                        <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"></path>
+                        </svg>
+                        <span id="pdf-bookmarks-label"
+                            class="text-sm font-bold tracking-wide uppercase whitespace-nowrap text-slate-800">Outline</span>
+                    </button>
+                    <!-- Content -->
+                    <div id="pdf-bookmarks-content" class="p-4 text-sm text-slate-700 overflow-y-auto w-64">
+                    </div>
+                </div>
+
+                <!-- Main Canvas Container -->
+                <div class="flex-1 overflow-auto bg-slate-200 p-4 sm:p-8 flex justify-center items-start relative"
+                    id="pdf-canvas-container">
+
+                    <!-- Loading Spinner -->
+                    <div id="pdf-loading"
+                        class="flex flex-col items-center justify-center absolute inset-0 text-slate-500 z-10 bg-slate-200/80 backdrop-blur-sm">
+                        <svg class="animate-spin h-10 w-10 mb-4 text-xenon-green-600" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                            </circle>
+                            <path class="opacity-75" fill="currentColor"
+                                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                            </path>
+                        </svg>
+                        <span class="font-medium tracking-wide text-sm text-slate-700" id="pdf-loading-text">Loading PDF
+                            Engine...</span>
+                    </div>
+                    <!-- Canvas -->
+                    <canvas id="pdf-render" class="hidden shadow-xl max-w-full bg-white"></canvas>
+                </div>
+            </div>
+
+            <!-- Footer Controls -->
+            <div
+                class="px-4 py-3 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 shrink-0">
+
+                <!-- Zoom & Pagination -->
+                <div class="flex items-center gap-4 sm:gap-6 w-full sm:w-auto justify-between">
+                    <!-- Zoom -->
+                    <div class="flex items-center bg-white rounded-lg p-1 border border-slate-300 shadow-sm">
+                        <button id="pdf-zoom-out"
+                            class="p-1.5 text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-md transition-colors"><svg
+                                class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM13.5 10.5h-6">
+                                </path>
+                            </svg></button>
+                        <span id="pdf-zoom-level" class="text-slate-700 text-xs font-bold w-12 text-center">100%</span>
+                        <button id="pdf-zoom-in"
+                            class="p-1.5 text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-md transition-colors"><svg
+                                class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6">
+                                </path>
+                            </svg></button>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="flex items-center gap-2 sm:gap-3">
+                        <button id="pdf-prev"
+                            class="p-1.5 bg-white text-slate-700 hover:bg-slate-100 rounded-lg transition-colors border border-slate-300 disabled:opacity-40 disabled:cursor-not-allowed shadow-sm"><svg
+                                class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5">
+                                </path>
+                            </svg></button>
+                        <span class="text-slate-600 text-sm font-medium whitespace-nowrap">Page <span id="pdf-page-num"
+                                class="font-bold text-slate-900">1</span> of <span id="pdf-page-count"
+                                class="font-bold text-slate-900">-</span></span>
+                        <button id="pdf-next"
+                            class="p-1.5 bg-white text-slate-700 hover:bg-slate-100 rounded-lg transition-colors border border-slate-300 disabled:opacity-40 disabled:cursor-not-allowed shadow-sm"><svg
+                                class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5">
+                                </path>
+                            </svg></button>
+                    </div>
+                </div>
+
+                <!-- CTA to Request Service -->
+                <button id="pdf-request-cta"
+                    class="w-full sm:w-auto bg-xenon-green-600 hover:bg-xenon-green-700 text-white font-bold py-2.5 px-6 rounded-lg text-sm transition-colors shadow-sm flex items-center justify-center gap-2">
+                    Request This Service
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/pdf_viewer.js"></script>
 </body>
 
 </html>
