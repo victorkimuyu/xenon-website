@@ -253,20 +253,20 @@ document.addEventListener("DOMContentLoaded", () => {
             
             // Fetch and render outline
             pdfDoc.getOutline().then(outline => {
-                // Always show the collapsible sidebar in default 'closed' state for testing
+                // Always show the collapsible sidebar in default 'open' state for testing
                 if (bookmarksPane) {
                     bookmarksPane.classList.remove('hidden');
                     bookmarksPane.classList.add('flex');
-                    bookmarksPane.classList.add('w-12');
-                    bookmarksPane.classList.remove('w-64');
+                    bookmarksPane.classList.remove('w-12');
+                    bookmarksPane.classList.add('w-64');
                     
                     if (bookmarksLabel) {
-                        bookmarksLabel.classList.add('opacity-0');
-                        bookmarksLabel.classList.remove('opacity-100');
+                        bookmarksLabel.classList.remove('opacity-0');
+                        bookmarksLabel.classList.add('opacity-100');
                     }
                     if (bookmarksContent) {
-                        bookmarksContent.classList.add('hidden', 'opacity-0');
-                        bookmarksContent.classList.remove('opacity-100');
+                        bookmarksContent.classList.remove('hidden', 'opacity-0');
+                        bookmarksContent.classList.add('opacity-100');
                         // Render the items
                         renderOutline(outline, bookmarksContent);
                     }
